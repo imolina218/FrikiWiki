@@ -1,11 +1,15 @@
-html,
-body {
+html {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #0000003d;
 }
-
+body {
+  margin: 0;
+  font-family: 'Bebas Neue', cursive;
+}
+ul {
+  color: red;
+}
 a {
   color: inherit;
   text-decoration: none;
