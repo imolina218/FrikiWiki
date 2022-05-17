@@ -8,8 +8,9 @@
         width: 280%;
     }
 }
+  
 .spinner > div {
-    background-color: #F2E21E;
+    background-color: #E11C22;
     height: 100%;
     width: 6px;
     display: inline-block;

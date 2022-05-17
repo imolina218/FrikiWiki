@@ -5,8 +5,15 @@ const Search = ({ setPageNumber, setSearch }) => {
 
   let [input, setInput] = useState("")
 
+  const handleSubmit = (e) => {
+      e.preventDefault();
+  }
+
   return (
-    <form className={styles.search}>
+    <form 
+      className={styles.search}
+      onSubmit={handleSubmit}
+    >
       <input
         type="text" 
         placeholder='Search Characters'
@@ -15,7 +22,7 @@ const Search = ({ setPageNumber, setSearch }) => {
         }} 
       />
       <button
-        type="button"
+        type="submit"
         onClick={ () => {
           setPageNumber(1);
           setSearch(input);

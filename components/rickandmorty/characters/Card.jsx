@@ -1,4 +1,4 @@
-import styles from '../../../styles/Rickandmorty.module.css'
+import styles from '../../../styles/Rickandmorty.module.css';
 
 const Card = ({results}) => {
 
@@ -20,7 +20,7 @@ const Card = ({results}) => {
       )
     });
   } else {
-    display = "No Results Found";
+    display = "No results found";
   }
 
   return (

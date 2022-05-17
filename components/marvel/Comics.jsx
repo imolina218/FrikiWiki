@@ -1,15 +1,18 @@
 import { useState, useEffect } from 'react';
 import { HiArrowLeft } from "react-icons/hi";
 import styles from '../../styles/Marvel.module.css';
+import Pagination from './Pagination';
+import Spinner from './Spinner';
 
 const Comics = ({publicKey, hash}) => {
   let [modal, setModal] = useState(false);
   let [info, setInfo] = useState(null);
+  let [pageNumber, setPageNumber] = useState(0)
   let [fetchData, setFetchData] = useState([]);
   let { data } = fetchData;
   let display;
     
-  let api = `https://gateway.marvel.com/v1/public/comics?ts=1&apikey=${publicKey}&hash=${hash}&limit=50&offset=0`;
+  let api = `https://gateway.marvel.com/v1/public/comics?ts=1&apikey=${publicKey}&hash=${hash}&limit=50&offset=${pageNumber}`;
 
   const handleModal = () => {
       return setModal(!modal);
@@ -22,7 +25,7 @@ const Comics = ({publicKey, hash}) => {
     })()
   
   }, [api]);
-
+  
   if(data) {
       display = data.results.map(result => {
         let { id, title } = result;
@@ -50,13 +53,11 @@ const Comics = ({publicKey, hash}) => {
         )
       });
   } else {
-    display = "No Results Found";
-    /* display = <Spinner />; */
+    display = <Spinner />
   }
 
   if(modal) {
     let { title, issueNumber, description, format, pageCount, thumbnail } = info.result;
-    console.log(info);
     return (
       <div className={styles.modal}>
 
@@ -91,9 +92,21 @@ const Comics = ({publicKey, hash}) => {
 
   return (
       <>
+
+        <Pagination 
+          pageNumber={pageNumber}
+          setPageNumber={setPageNumber}
+        />
+
           <ul className={styles.card}>
               {display}
           </ul>
+
+        <Pagination 
+          pageNumber={pageNumber}
+          setPageNumber={setPageNumber}
+          total={52028}
+        />
       </>
   )
 }

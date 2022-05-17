@@ -37,24 +37,26 @@
 .img img {
     padding: 1rem;
 }
-
 .nav {
     font-family: 'Creepster', cursive;
     display: flex;
     flex-direction: column;
     padding: 1rem;
 }
-.nav a {
+.nav button {
+    background-color: #000000;
+    text-align: left;
+    border: none;
     color: #ffffff;
     font-size: 1.2rem;
     padding: 1rem 1rem 1rem 0.5rem;
     border-bottom: 1px solid rgba(100, 100, 100, .3);
 }
-.nav a:hover {
+.nav button:hover {
+    cursor: pointer;
     background-color: #272323;
     transition-duration: .3s;
 }
-
 .content h2 {
     text-align: center;
 }
@@ -68,12 +70,25 @@
     flex-direction: column;
     width: 80%;
     margin-left: 10%;
+}  
+.titlem {
+    text-align: center;
+    font-family: 'Creepster', cursive;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 0.5vw;
+    background: linear-gradient(90deg, #C2C2C2 0%, 
+            #2a8733 50%, #C2C2C2 100%);
+    text-transform: uppercase;
+    font-size: 6vw;
+    margin: 0;
+    padding: 0;
 }
 /* . */
 
 /* SEARCH */
 .search {
-    margin-top: -1vw;
+    margin-top: 1vw;
 }
 .search input {
     font-size: 4vw;
@@ -127,8 +142,11 @@
     margin: 0;
     font-size: 5vw;
 }
-.filters > div {
-    font-size: 3vw;
+.clear {
+    color: #50C227;
+    text-decoration: underline;
+    font-size: 2.5vw;
+    cursor: pointer;
 }
 @media(min-width: 768px) {
     .filters p:first-of-type {
@@ -138,15 +156,12 @@
     .filters > div {
         font-size: 1.5vw;
     }
+    .clear {
+        font-size: 1.8vw;
+    }
 }
 .filters h3 {
     margin: 0;
-}
-.clear {
-    color: #50C227;
-    text-decoration: underline;
-    font-size: 1vw;
-    cursor: pointer;
 }
 .filtertype {
     margin: 0.5vw 1vw 1vw 1vw;
@@ -179,7 +194,6 @@
 @media(min-width: 1280px) {
     .radios {
         justify-content: center;
-        display: flex;
         margin: 1vw;
     }
     .radios > div {
@@ -189,12 +203,14 @@
 .radio {
     color: #272323;
     border-radius: 1vw;
-    border: 1px solid #272323;
     transition-duration: .3s;
+    padding: .5vw;
 }
-.radio:hover {
+.radio label:hover,
+.radio label:active {
     color: #50C227;
     border: 1px solid #50C227;
+    border-radius: 2vw;
     background-color: #ffffff;
     transition-duration: .3s;
 }
@@ -257,6 +273,7 @@
     }
 }
 .card p {
+    color: #272323;
     font-size: 4vw;
     text-align: left;
     padding: 0 2vw 0 2vw;
@@ -285,6 +302,9 @@
 /* . */
 
 /* EPISODES */
+.options {
+    margin-top: 1vw;
+}
 .options h4 {
     margin: 1vw;
 }
@@ -349,6 +369,7 @@
 .pagination a {
     margin: 0;
     padding: 1vw;
+    color: #ffffff;
 }
 .pagination a:hover {
     cursor: pointer;

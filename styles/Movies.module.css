@@ -39,7 +39,7 @@
 }
 
 .nav {
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Arvo', serif;
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -62,8 +62,8 @@
 
 /* CONTAINER */
 .container {
-    font-family: 'Nanum Gothic', sans-serif;
-    background-color: #000000;
+    font-family: 'Arvo', serif;
+    background-color: #081026;
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -74,7 +74,6 @@
     color: #ffffff;
 }
 /* . */
-
 /* SEARCH */
 .search {
     margin-top: 1vw;
@@ -92,19 +91,21 @@
     }
 }
 .search input:focus {
-    box-shadow: 0 0.5em 0.5em -0.4em #F2E21E;
+    box-shadow: 0 0.5em 0.5em -0.4em #930205;
     transform: translateY(-0.05em);
     transition-duration: .3s;
 }
 .search button {
     color: #000000;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Arvo', serif;
     font-size: 4vw;
     font-weight: 600;
     margin-left: 1vw;
     padding: 0.5vw;
-    border: none;
-    background-color: #F2E21E;
+    border: 1px solid #930205;
+    color: #ffffff;
+    background: linear-gradient(90deg, rgba(8,16,38,1) 0%, 
+            #930205 50%, rgba(8,16,38,1) 100%);
     transition-duration: .3s;
 }
 @media(min-width: 768px) {
@@ -114,19 +115,18 @@
 }
 .search button:hover {
     cursor: pointer;
-    background-color: #ffffff;
-    box-shadow: 0 0.5em 0.5em -0.4em #F2E21E;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0.5em 0.5em -0.4em #930205;
     transform: translateY(-0.05em);
 }
 /* . */
-
 /* CARDS */
 .titlem {
     color: #ffffff;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: 0.5vw;
-    background: linear-gradient(90deg, #000000 0%, 
-            #f2e21e 50%, #000000 100%);
+    background: linear-gradient(90deg, rgba(8,16,38,1) 0%, 
+            rgba(147,2,5,1) 50%, rgba(8,16,38,1) 100%);
     text-transform: uppercase;
     font-size: 6vw;
     margin: 0;
@@ -154,6 +154,7 @@
 }
 .card > div {
     margin: 2vw;
+    padding: 0 1vw;
     transition-duration: .3s;
     font-size: 3.5vw;
 }
@@ -166,41 +167,41 @@
     background-color: #272323;
     transition-duration: .3s;
 }
-.card img {
-    box-shadow: .2vw .2vw .8vw .2vw #F2E21E;
+.cardimgcomic {
+    border-radius: 2vw 2vw 0vw 0vw;
+}
+.cardimgcomic img {
     margin-top: 1vw;
-    width: 80%;
-    height: 90%;
+    width: 30vw;
+    height: 50vw;
 }
-.info {
-    padding: 2vw;
-    text-align: left;
-    font-size: 3.5vw;
-    margin-left: 2vw;
-    color: #ffffff;
-}
-.info h3 {
-    margin-top: 0;
-    padding-top: 0;
-}
-.info h3,
-.info span {
-    color: #F2E21E;
-}
-@media(min-width: 768px) {
-    .info {
-        font-size: 1.5vw;
+@media (min-width: 1280px) {
+    .cardimgcomic img {
+        width: 20vw;
+        height: 30vw;
     }
 }
-
+.cardimg img {
+    margin-top: 1vw;
+    width: 30vw;
+    height: 30vw;
+}
+@media (min-width: 1280px) {
+    .cardimg img {
+        width: 20vw;
+        height: 20vw;
+    }
+}
 .learnmore {
-    font-family: 'Nanum Gothic', sans-serif;
-    font-weight: 800;
-    letter-spacing: 0.1vw;
-    background-color: #F2E21E;
+    font-family: 'Arvo', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: linear-gradient(90deg, rgba(8,16,38,1) 0%, 
+            rgba(147,2,5,1) 50%, rgba(8,16,38,1) 100%);
+    border: 2px solid #081026;
     margin: 1vw;
     padding: 1vw;
-    border: none;
     transition-duration: .3s;
 }
 @media(min-width: 768px) {
@@ -216,21 +217,50 @@
 .learnmore:hover,
 .learnmore:focus {
     cursor: pointer;
-    background-color: #ffffff;
-    box-shadow: 0 0.5em 0.5em -0.4em #F2E21E;
-    transform: translateY(-0.25em);
+    color: #ffffff;
+    border: 2px solid #930205;
+    transition-duration: .3s;
 }
-
-/* MODAL MOVIES */
+/* . */
+/* Card */
 .modal {
-    display: flex;
     width: 80%;
-    flex-direction: column;
-    background-color: #000000;
+    color: #ffffff;
+    background-color: #081026;
     position: absolute;
 }
+.modal h3 {
+    margin-left: 1vw;
+    margin-top: 0;
+}
+@media(min-width: 768px) {
+    .modal h3 {
+        font-size: 2vw;
+    }
+}
+.info {
+    padding: 2vw;
+    text-align: left;
+    font-size: 3.5vw;
+    margin-left: 2vw;
+    color: #ffffff;
+}
+.info div {
+    margin-top: 1vw;
+}
+.info span {
+    margin: 1vw 1vw 1vw 0;
+    color: #ffffff;
+    font-weight: 800;
+}
+@media(min-width: 768px) {
+    .info {
+        font-size: 1.5vw;
+    }
+}
 .close {
-    background-color: #000000;
+    margin-left: 85%;
+    background-color: #081026;
     border: none;
     padding: .5vw 2vw;
     color: #ffffff;
@@ -245,40 +275,25 @@
 }
 .close:hover {
     cursor: pointer;
-    color: #000000;
-    background-color: #F2E21E;
+    color: #ffffff;
+    background-color: #930205;
     transition-duration: .3s;
-    justify-content: flex-end;
 }
 .modal img {
-    box-shadow: .2vw .2vw .8vw .2vw #F2E21E;
+    border: 2px solid #ffffff;
     width: 30%;
     height: 30%;
     margin: 1vw;
 }
-.contentmovies {
-    display: flex;
-    color: #ffffff;
-}
-.content {
-    display: flex;
-    color: #ffffff;
-    justify-content: flex-end;
-    gap: 40%;
-}
-@media(min-width: 768px) {
-    .content {
-        gap: 60%;
-    }
-}
+
 /* . */
 /* PAGINATION */
 .pagination {
     justify-content: center;
     display: flex;
     list-style-type: none;
-    gap: 1vw;
-    font-size: 3.5vw;
+    gap: .2vw;
+    font-size: 2.2vw;
     font-weight: 900;
     padding: 0;
     margin: 3vw 1vw;
@@ -299,24 +314,24 @@
 }
 .pagination li:first-of-type {
     margin-left: 0;
-    color: #000000;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: #930205;
 }
 .pagination li:last-of-type {
-    color: #000000;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: #930205;
 }
 .pagination li {
     margin-left: 1vw;
 }
 .pagination li:hover {
     color: #000000;
-    background-color: #F2E21E;
+    background-color: #ffffff;
     transition-duration: .3s;
 }
 .active {
-    color: #000000;
-    background-color: #F2E21E;
+    color: #ffffff;
+    background-color: #930205;
     transition-duration: .3s;
 }
 /* . */

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styles from '../../styles/Starwars.module.css';
+import styles from '../../styles/Movies.module.css';
 
 const Search = ({ setPageNumber, setSearch }) => {
 
@@ -16,7 +16,7 @@ const Search = ({ setPageNumber, setSearch }) => {
         >
             <input
                 type="text" 
-                placeholder='Search Characters'
+                placeholder="Search e.g. Star Wars"
                 onChange={ e => {
                     setInput(e.target.value);
                 }} 

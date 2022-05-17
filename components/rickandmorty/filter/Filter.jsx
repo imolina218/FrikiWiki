@@ -17,10 +17,10 @@ const Filter = ({ setStatus, setPageNumber, setGender, setSpecie }) => {
     <div className={styles.filters}>
       
       <p>Filter</p>
-      <div 
+      <p 
         className={styles.clear}
         onClick={clear}
-      >Clear Filters</div>
+      >Clear Filters</p>
       
       <div>
 
