@@ -16,7 +16,7 @@ const Search = ({ setPageNumber, setSearch }) => {
         >
             <input
                 type="text" 
-                placeholder='Search Characters'
+                placeholder='Search'
                 onChange={ e => {
                     setInput(e.target.value);
                 }} 
