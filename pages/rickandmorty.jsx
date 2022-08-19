@@ -7,7 +7,7 @@ import Episodes from '../components/rickandmorty/Episodes';
 import Locations from '../components/rickandmorty/Locations';
 import styles from '../styles/Rickandmorty.module.css';
 
-const rickandmorty = () => {
+const Rickandmorty = () => {
 
   let [section, setSection] = useState("characters");
 
@@ -86,4 +86,4 @@ const rickandmorty = () => {
   )
 }
 
-export default rickandmorty
+export default Rickandmorty

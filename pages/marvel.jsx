@@ -8,7 +8,7 @@ import Characters from '../components/marvel/Characters';
 import Events from '../components/marvel/Events';
 import Series from '../components/marvel/Series';
 
-const marvel = () => {
+const Marvel = () => {
 
   const publicKey = process.env.NEXT_PUBLIC_MARVELPUBLICKEY;
   const hash = process.env.NEXT_PUBLIC_MARVELHASH;
@@ -107,4 +107,4 @@ const marvel = () => {
   )
 }
 
-export default marvel
+export default Marvel

@@ -10,7 +10,7 @@ import Vehicles from '../components/sw/Vehicles';
 import Species from '../components/sw/Species';
 import Planets from '../components/sw/PLanets';
 
-const starwars = () => {
+const Starwars = () => {
 
   let [section, setSection] = useState("films");
 
@@ -109,4 +109,4 @@ const starwars = () => {
   )
 }
   
-export default starwars
+export default Starwars

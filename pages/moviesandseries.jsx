@@ -6,7 +6,7 @@ import Movies from '../components/moviesandseries/Movies';
 import Series from '../components/moviesandseries/Series';
 import styles from '../styles/Movies.module.css';
 
-const moviesandseries = () => {
+const Moviesandseries = () => {
   const publicKey = process.env.NEXT_PUBLIC_MOVIES;
   let [section, setSection] = useState("movies");
 
@@ -81,4 +81,4 @@ const moviesandseries = () => {
   )
 }
 
-export default moviesandseries
+export default Moviesandseries
