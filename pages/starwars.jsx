@@ -8,7 +8,7 @@ import Characters from '../components/sw/Characters';
 import Starships from '../components/sw/Starships';
 import Vehicles from '../components/sw/Vehicles';
 import Species from '../components/sw/Species';
-import Planets from '../components/sw/PLanets';
+import Planets from '../components/sw/Planets';
 
 const Starwars = () => {
 
