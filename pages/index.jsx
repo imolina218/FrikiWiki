@@ -29,14 +29,12 @@ export default function Home() {
           
           <div className={styles.img}>
             <Link href="/moviesandseries">
-              <>
-                <Image
-                  src="/img/MoviesAndSeries.png"
-                  alt="Image of movies"
-                  width={500}
-                  height={800}
-                />  
-              </>
+              <Image
+                src="/img/MoviesAndSeries.png"
+                alt="Image of movies"
+                width={500}
+                height={800}
+              />  
             </Link>
           </div>
 
@@ -55,14 +53,12 @@ export default function Home() {
           
           <div className={styles.img}>
             <Link href="/marvel">
-              <>
-                <Image
-                  src="/img/Marve.png"
-                  alt="Image of Marvel"
-                  width={500}
-                  height={800}
-                />
-              </>
+              <Image
+                src="/img/Marve.png"
+                alt="Image of Marvel"
+                width={500}
+                height={800}
+              />
             </Link>
           </div>
 
@@ -81,14 +77,12 @@ export default function Home() {
           
           <div className={styles.img}>
             <Link href="/starwars">
-              <>
-                <Image
-                  src="/img/StarWars.jpg"
-                  alt="Picture of Star Wars"
-                  width={500}
-                  height={800}
-                />
-              </>
+              <Image
+                src="/img/StarWars.jpg"
+                alt="Picture of Star Wars"
+                width={500}
+                height={800}
+              />
             </Link>
           </div>
           
@@ -108,14 +102,12 @@ export default function Home() {
 
           <div className={styles.img}>
             <Link href="/rickandmorty">
-              <>
-                <Image
-                  src="/img/RickAndMorty.jpg"
-                  alt="Picture of Rick And Morty"
-                  width={500}
-                  height={800}
-                />
-              </>
+              <Image
+                src="/img/RickAndMorty.jpg"
+                alt="Picture of Rick And Morty"
+                width={500}
+                height={800}
+              />
             </Link>
           </div>
           
