@@ -31,7 +31,7 @@ export default function Home() {
             <Link href="/moviesandseries">
               <Image
                 priority
-                src="/static/img/MoviesAndSeries.png"
+                src="/img/MoviesAndSeries.png"
                 alt="Movies and Series poster"
                 width={500}
                 height={800}
@@ -56,7 +56,7 @@ export default function Home() {
             <Link href="/marvel">
               <Image
                 priority
-                src="/static/img/Marve.png"
+                src="/img/Marve.png"
                 alt="Image of Marvel"
                 width={500}
                 height={800}
@@ -80,7 +80,7 @@ export default function Home() {
           <div className={styles.img}>
             <Link href="/starwars">
               <Image
-                src="/static/img/StarWars.jpg"
+                src="/img/StarWars.jpg"
                 alt="Picture of Star Wars"
                 width={500}
                 height={800}
@@ -106,7 +106,7 @@ export default function Home() {
             <Link href="/rickandmorty">
               <Image
                 priority
-                src="/static/img/RickAndMorty.jpg"
+                src="/img/RickAndMorty.jpg"
                 alt="Picture of Rick And Morty"
                 width={500}
                 height={800}
