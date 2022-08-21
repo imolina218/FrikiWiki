@@ -78,7 +78,7 @@ export default function Home() {
           <div className={styles.img}>
             <Link href="/starwars">
               <Image
-                src="/img/StarWars.jpg"
+                src="/img/StarWars.png"
                 alt="Picture of Star Wars"
                 width={500}
                 height={800}
@@ -103,7 +103,7 @@ export default function Home() {
           <div className={styles.img}>
             <Link href="/rickandmorty">
               <Image
-                src="/img/RickAndMorty.jpg"
+                src="/img/RickAndMorty.png"
                 alt="Picture of Rick And Morty"
                 width={500}
                 height={800}
