@@ -29,12 +29,20 @@
 }
 .header h1 {
   color: #ffffff;
-  font-size: 5vw;
+  font-size: 8vw;
   letter-spacing: 0.2rem;
 }
 .header span {
   display: block;
-  font-size: 2vw;
+  font-size: 5vw;
+}
+@media (min-width: 768px) {
+  .header h1 {
+    font-size: 6vw;
+  }
+  .header span {
+    font-size: 3vw;
+  }
 }
 
 .main {
